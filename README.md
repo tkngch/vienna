@@ -1,17 +1,15 @@
-# Vienna
-
-This is a stripped-off version of [vienna theme](https://github.com/keichi/vienna).
+# Vienna-Minimal
 
 ## Overview
 
-Vienna is a simple and clean blog theme for [Hugo](http://gohugo.io/).
+Vienna-Minimal is a stripped-off version of [vienna
+theme](https://github.com/keichi/vienna) for [Hugo](http://gohugo.io/).
+
 Notable features are:
 
 - Simple and clean design
 - Client side source code highlighting
-- Social links (Twitter, Facebook, GitHub, LinkedIn, Instagram, Keybase) *Removed*
 - Support for tags
-- Analytics with Google Analytics or Mixpanel *Removed*
 - Responsive design
 - Font Awesome icons
 
@@ -22,7 +20,7 @@ In your hugo site directory, run:
 ```shell
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/tkngch/vienna
+$ git clone https://github.com/tkngch/vienna-minimal
 ```
 
 ## Configuration
