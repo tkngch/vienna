@@ -1,23 +1,31 @@
 <article>
-  <header>
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <div class="post-meta clearfix">
-      <div class="post-date pull-left">
-        Posted on
-        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-          {{ .Date.Format "2 Jan 2006" }}
-        </time>
-      </div>
-    </div>
-  </header>
-  <div>
-    {{ .Summary }}
-  </div>
-  {{ if .Truncated }}
-  <footer>
-    <ul class="pager">
-      <li class="next"><a href="{{ .Permalink }}">Read more <span aria-hidden="true">&raquo;</span></a></li>
-    </ul>
-  </footer>
-  {{ end }}
+
+    <header>
+        <h2 class="colour02">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="pull-left small article-date colour03">
+            Posted on
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+                {{ .Date.Format "2 Jan 2006" }}
+            </time>
+        </div>
+    </header>
+
+    <div class="clearfix"> </div>
+    <div> {{ .Summary }} </div>
+
+    {{ if .Truncated }}
+    <footer>
+        <ul class="pager">
+            <li class="next">
+                <a href="{{ .Permalink }}">
+                    Read more <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    {{ end }}
+
 </article>

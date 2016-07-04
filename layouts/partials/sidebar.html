@@ -1,0 +1,33 @@
+<div class="sidebar col-md-3">
+
+    {{ if .Site.Author }}
+    <div class="sidebar-header colour02">
+        <span>Author</span>
+    </div>
+    <div class="sidebar-content" id="author">
+        <span>{{ .Site.Author.name }}</span>
+        <br/>
+        <span class="small colour03">{{ .Site.Author.bio }}</span>
+    </div>
+
+    {{ end }}
+
+    {{ with .Site.Taxonomies.tags }}
+    <div class="sidebar-header colour02">
+        <span>Tags</span>
+    </div>
+    <div class="sidebar-content article-tag">
+        <ul class="list-unstyled">
+            {{ range $tag, $taxonomy := . }}
+            <li class="sidebar-tag-list">
+                <a href="/tags/{{ $tag | urlize }}">
+                    <span></span>
+                    #{{ $tag }} ({{ $taxonomy.Count }})
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+</div>

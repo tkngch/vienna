@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <head>
+        <meta charset="utf-8" />
 
-  <title>
-    {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
-  </title>
+        <!-- bootstrap: proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
-  <!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}css/github.css" /> -->
-  <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css"> -->
-  <!-- <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico" /> -->
+        <title>
+            {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
+        </title>
 
-</head>
-<body>
-    <header class="global-header"  style="background-color: #000099;">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
+        <!-- <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico" /> -->
 
-    <section class="header-text">
-      <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-      {{ with .Site.Params.subtitle }}
-      <div class="tag-line">
-        {{ . }}
-      </div>
-      {{ end }}
-      {{ partial "link.html" . }}
-    </section>
-  </header>
-  <main class="container">
+    </head>
+
+    <body class="colour04">
+        <header class="global-header">
+            <section class="header colour02Background">
+                <a href="{{ .Site.BaseURL }}">
+                    <h1 class="colour01"> {{ .Site.Title }} </h1>
+                    {{ with .Site.Params.subtitle }}
+                    <h5 class="colour03"> {{ . }} </h5>
+                    {{ end }}
+                </a>
+            </section>
+        </header>
+
+        <main class="container">

@@ -1,11 +1,14 @@
 {{ partial "header.html" . }}
-<div class="article-list">
-  {{ range $index, $page := .Paginator.Pages }}
-  {{ if ne $index 0 }}
-  <hr/>
-  {{ end }}
-  {{ .Render "li" }}
-  {{ end }}
+
+<div class="article-list col-md-9">
+    {{ range $index, $page := .Paginator.Pages }}
+    {{ if ne $index 0 }}
+    <hr/>
+    {{ end }}
+    {{ .Render "li" }}
+    {{ end }}
 </div>
+
+{{ partial "sidebar.html" . }}
 {{ partial "pagination.html" .Paginator }}
 {{ partial "footer.html" . }}

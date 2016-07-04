@@ -7,11 +7,10 @@ theme](https://github.com/keichi/vienna) for [Hugo](http://gohugo.io/).
 
 Notable features are:
 
-- Simple and clean design
-- Client side source code highlighting
-- Support for tags
-- Responsive design
-- Font Awesome icons
+- Simple and clean, responsive design with bootstrap
+- Source code highlighting with Pygments
+- Side bar with author info and list of tags
+
 
 ## Installation
 
