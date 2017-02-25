@@ -7,7 +7,9 @@
     <div class="sidebar-content" id="author">
         <span>{{ .Site.Author.name }}</span>
         <br/>
+        {{ if isset .Site.Author "bio" }}
         <span class="small colour03">{{ .Site.Author.bio }}</span>
+        {{ end }}
     </div>
 
     {{ end }}
