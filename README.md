@@ -7,7 +7,7 @@ theme](https://github.com/keichi/vienna) for [Hugo](http://gohugo.io/).
 
 Notable features are:
 
-- Simple and clean, responsive design with bootstrap
+- Responsive design with bootstrap
 - Source code highlighting with Pygments
 - Side bar with author info and list of tags
 
@@ -42,9 +42,9 @@ copyright = "&copy; Copyright notice"
 
 ## Usage
 
-Use hugo's `-t vienna` or `--theme=vienna` option with hugo commands.
+Use hugo's `-t vienna-minimal` or `--theme=vienna-minimal` option with hugo commands.
 Example:
 
 ```shell
-$ hugo server -t vienna -w -D
+$ hugo server -t vienna-minimal -w -D
 ```
