@@ -180,3 +180,21 @@ a {
     color: #889093;
     border-color: #98a0a4;
 }
+
+
+/* Image Alignment */
+img[src$='#floatleft']
+{
+    float: left;
+    margin: 1em;
+}
+img[src$='#floatright']
+{
+    float: right;
+    margin: 1em;
+}
+img[src$='#center']
+{
+    display: block;
+    margin: 0.7rem auto;
+}
